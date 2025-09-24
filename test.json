@@ -1,0 +1,933 @@
+{
+  "data": {
+    "artist": {
+      "discography": {
+        "singles": {
+          "totalCount": 23,
+          "items": [
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "45X7Cl37txovrT12oVgpNw",
+                    "uri": "spotify:album:45X7Cl37txovrT12oVgpNw",
+                    "name": "HBP",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2025,
+                      "isoString": "2025-08-20T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02325eb7fe151b01a5439496ca",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851325eb7fe151b01a5439496ca",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273325eb7fe151b01a5439496ca",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "7kModYzsTFCL_plyaqSxsQ",
+                      "shareUrl": "https://open.spotify.com/album/45X7Cl37txovrT12oVgpNw?si=7kModYzsTFCL_plyaqSxsQ"
+                    },
+                    "tracks": {
+                      "totalCount": 3
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "6RtBxCEXbfGgF1nRUKvbQ3",
+                    "uri": "spotify:album:6RtBxCEXbfGgF1nRUKvbQ3",
+                    "name": "CONTAGIOUS",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2025,
+                      "isoString": "2025-04-02T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02487fb247bf148ecd9c0d77b4",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851487fb247bf148ecd9c0d77b4",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273487fb247bf148ecd9c0d77b4",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "9ekeEXAVSHq5SeNCPE26DA",
+                      "shareUrl": "https://open.spotify.com/album/6RtBxCEXbfGgF1nRUKvbQ3?si=9ekeEXAVSHq5SeNCPE26DA"
+                    },
+                    "tracks": {
+                      "totalCount": 2
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "0vn7lEHU8rkFIghKC9Xpth",
+                    "uri": "spotify:album:0vn7lEHU8rkFIghKC9Xpth",
+                    "name": "SILHOUETTE",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2024,
+                      "isoString": "2024-10-30T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02a7abc97d011c2f6886f20575",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851a7abc97d011c2f6886f20575",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273a7abc97d011c2f6886f20575",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "yA4WmoP9QVSNI5eieHSAIg",
+                      "shareUrl": "https://open.spotify.com/album/0vn7lEHU8rkFIghKC9Xpth?si=yA4WmoP9QVSNI5eieHSAIg"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "16g0KMf28LDCl07d4CCBfL",
+                    "uri": "spotify:album:16g0KMf28LDCl07d4CCBfL",
+                    "name": "ADAM",
+                    "type": "EP",
+                    "date": {
+                      "year": 2024,
+                      "isoString": "2024-06-26T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d56b3d790d1c31d6ed44768b",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851d56b3d790d1c31d6ed44768b",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d56b3d790d1c31d6ed44768b",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "e5DL0xpwSEmzd-biJPlNzg",
+                      "shareUrl": "https://open.spotify.com/album/16g0KMf28LDCl07d4CCBfL?si=e5DL0xpwSEmzd-biJPlNzg"
+                    },
+                    "tracks": {
+                      "totalCount": 5
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "69GZjpJKqLwVudrpLtxj7F",
+                    "uri": "spotify:album:69GZjpJKqLwVudrpLtxj7F",
+                    "name": "Met Gala",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2021,
+                      "isoString": "2021-09-13T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e0220cfd0816fa9b4a1c624338a",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000485120cfd0816fa9b4a1c624338a",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b27320cfd0816fa9b4a1c624338a",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "4jKl9AvqRvCel3s_VaEShg",
+                      "shareUrl": "https://open.spotify.com/album/69GZjpJKqLwVudrpLtxj7F?si=4jKl9AvqRvCel3s_VaEShg"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "79Etmphnb9H9Q9CbHnljQu",
+                    "uri": "spotify:album:79Etmphnb9H9Q9CbHnljQu",
+                    "name": "unfollow",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2021,
+                      "isoString": "2021-03-13T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d6f2d109a6b90b8402ddd309",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851d6f2d109a6b90b8402ddd309",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d6f2d109a6b90b8402ddd309",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "FQ1aAcyeQfiq2YIgEZTEzA",
+                      "shareUrl": "https://open.spotify.com/album/79Etmphnb9H9Q9CbHnljQu?si=FQ1aAcyeQfiq2YIgEZTEzA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "4R4fTgNUpPwntDohtAAkZK",
+                    "uri": "spotify:album:4R4fTgNUpPwntDohtAAkZK",
+                    "name": "cancel me.",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2020,
+                      "isoString": "2020-11-20T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e020c756f34f36538f863804cd4",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d000048510c756f34f36538f863804cd4",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b2730c756f34f36538f863804cd4",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "AaNjX3Z0QPeLHVLSumNU-Q",
+                      "shareUrl": "https://open.spotify.com/album/4R4fTgNUpPwntDohtAAkZK?si=AaNjX3Z0QPeLHVLSumNU-Q"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "3OlYZvsrmsP16W0neRJN6a",
+                    "uri": "spotify:album:3OlYZvsrmsP16W0neRJN6a",
+                    "name": "i can't drive",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2020,
+                      "isoString": "2020-09-24T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e0239341c97102dc78025bdf25f",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000485139341c97102dc78025bdf25f",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b27339341c97102dc78025bdf25f",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "E_kyd7Q5RY65BvnWxk1UUQ",
+                      "shareUrl": "https://open.spotify.com/album/3OlYZvsrmsP16W0neRJN6a?si=E_kyd7Q5RY65BvnWxk1UUQ"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "7eqmaC2jRIkHBTBeV3j2Hm",
+                    "uri": "spotify:album:7eqmaC2jRIkHBTBeV3j2Hm",
+                    "name": "Casual",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2020,
+                      "isoString": "2020-06-25T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e0234c59bf87e25593801219b6f",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000485134c59bf87e25593801219b6f",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b27334c59bf87e25593801219b6f",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "QPrjnK7-TqejakA_kFJf5w",
+                      "shareUrl": "https://open.spotify.com/album/7eqmaC2jRIkHBTBeV3j2Hm?si=QPrjnK7-TqejakA_kFJf5w"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "5yDsoLWqyZNtmYeQuEwDJL",
+                    "uri": "spotify:album:5yDsoLWqyZNtmYeQuEwDJL",
+                    "name": "Writer's Block",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2020,
+                      "isoString": "2020-04-19T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e022d6642ff9b186538b448fbca",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d000048512d6642ff9b186538b448fbca",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b2732d6642ff9b186538b448fbca",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "S42k78u9R2K0eytuXmPthg",
+                      "shareUrl": "https://open.spotify.com/album/5yDsoLWqyZNtmYeQuEwDJL?si=S42k78u9R2K0eytuXmPthg"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "5s1JOrLw53XYBgkUfnJicf",
+                    "uri": "spotify:album:5s1JOrLw53XYBgkUfnJicf",
+                    "name": "Best Night",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2020,
+                      "isoString": "2020-01-01T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02854d184abcc8cab891fdf2b3",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851854d184abcc8cab891fdf2b3",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273854d184abcc8cab891fdf2b3",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "R_o-hUaSQv-9LxnZ7zC2Rg",
+                      "shareUrl": "https://open.spotify.com/album/5s1JOrLw53XYBgkUfnJicf?si=R_o-hUaSQv-9LxnZ7zC2Rg"
+                    },
+                    "tracks": {
+                      "totalCount": 2
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "2RV2XDY3hRDSnBs6ECXX8U",
+                    "uri": "spotify:album:2RV2XDY3hRDSnBs6ECXX8U",
+                    "name": "Place Where I Could Hide",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-12-01T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e022c9e371fed18b76616150413",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d000048512c9e371fed18b76616150413",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b2732c9e371fed18b76616150413",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "FC9oMJA3Q4yoJy6AK35PIA",
+                      "shareUrl": "https://open.spotify.com/album/2RV2XDY3hRDSnBs6ECXX8U?si=FC9oMJA3Q4yoJy6AK35PIA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "3fhfbqBzx2M52d3CTUQmUP",
+                    "uri": "spotify:album:3fhfbqBzx2M52d3CTUQmUP",
+                    "name": "I Don't Know How to Get Home",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-08-18T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e029e98310d3b3634d6a744266a",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d000048519e98310d3b3634d6a744266a",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b2739e98310d3b3634d6a744266a",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "qu11w9EARU6WimX0a8-kFQ",
+                      "shareUrl": "https://open.spotify.com/album/3fhfbqBzx2M52d3CTUQmUP?si=qu11w9EARU6WimX0a8-kFQ"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "6snG7utSB0kDMxVFO6S4tK",
+                    "uri": "spotify:album:6snG7utSB0kDMxVFO6S4tK",
+                    "name": "I Pissed Somebody Off",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-06-22T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e021773d5c07421befbd5736330",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d000048511773d5c07421befbd5736330",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b2731773d5c07421befbd5736330",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "FKSWuh_oTEqy7YjsvSAshw",
+                      "shareUrl": "https://open.spotify.com/album/6snG7utSB0kDMxVFO6S4tK?si=FKSWuh_oTEqy7YjsvSAshw"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "76bN2z0rf1ey4NbBGYfUAa",
+                    "uri": "spotify:album:76bN2z0rf1ey4NbBGYfUAa",
+                    "name": "Wrong Way",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-04-12T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e0287a1a0fbfbc976c79ffddb28",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000485187a1a0fbfbc976c79ffddb28",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b27387a1a0fbfbc976c79ffddb28",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "1HpLvChMQkC96QQ-AsXVEg",
+                      "shareUrl": "https://open.spotify.com/album/76bN2z0rf1ey4NbBGYfUAa?si=1HpLvChMQkC96QQ-AsXVEg"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "2XsdZXRGV8iMXOpnXgzSNt",
+                    "uri": "spotify:album:2XsdZXRGV8iMXOpnXgzSNt",
+                    "name": "Mean",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-02-22T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d40a28e44616d80a9737661e",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851d40a28e44616d80a9737661e",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d40a28e44616d80a9737661e",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "DGYpwJ0oTlyEKKy15zE5GQ",
+                      "shareUrl": "https://open.spotify.com/album/2XsdZXRGV8iMXOpnXgzSNt?si=DGYpwJ0oTlyEKKy15zE5GQ"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "5wM9myh0T4fKzetAPo6LMV",
+                    "uri": "spotify:album:5wM9myh0T4fKzetAPo6LMV",
+                    "name": "Falling Apart",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-02-03T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d43e7f02a7c2c48b6604ac0b",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851d43e7f02a7c2c48b6604ac0b",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d43e7f02a7c2c48b6604ac0b",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "jnY0XPFpRF6YtPxCfRf4aA",
+                      "shareUrl": "https://open.spotify.com/album/5wM9myh0T4fKzetAPo6LMV?si=jnY0XPFpRF6YtPxCfRf4aA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "434KOo5IsfLaJfg8FszFIR",
+                    "uri": "spotify:album:434KOo5IsfLaJfg8FszFIR",
+                    "name": "Take It or Leave It",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-01-19T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e0294e071bcfcab3481f395268f",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000485194e071bcfcab3481f395268f",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b27394e071bcfcab3481f395268f",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "IXTc5WA-TsWKNVSidOhRAQ",
+                      "shareUrl": "https://open.spotify.com/album/434KOo5IsfLaJfg8FszFIR?si=IXTc5WA-TsWKNVSidOhRAQ"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "0m8fvaSSK31A47suAIXUmp",
+                    "uri": "spotify:album:0m8fvaSSK31A47suAIXUmp",
+                    "name": "Chemicals",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-01-03T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02005e4979966fe9988614c663",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851005e4979966fe9988614c663",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273005e4979966fe9988614c663",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "scOXyutMR1aP-25eZ0I8GQ",
+                      "shareUrl": "https://open.spotify.com/album/0m8fvaSSK31A47suAIXUmp?si=scOXyutMR1aP-25eZ0I8GQ"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "releases": {
+                "items": [
+                  {
+                    "id": "18fS611BagmONBG50KkuQ4",
+                    "uri": "spotify:album:18fS611BagmONBG50KkuQ4",
+                    "name": "Still in Love",
+                    "type": "SINGLE",
+                    "date": {
+                      "year": 2019,
+                      "isoString": "2019-01-02T00:00:00Z"
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e0267720ee53643b6c01f45a783",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000485167720ee53643b6c01f45a783",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b27367720ee53643b6c01f45a783",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "aes3bFwwREScwISkYyHbNA",
+                      "shareUrl": "https://open.spotify.com/album/18fS611BagmONBG50KkuQ4?si=aes3bFwwREScwISkYyHbNA"
+                    },
+                    "tracks": {
+                      "totalCount": 1
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
