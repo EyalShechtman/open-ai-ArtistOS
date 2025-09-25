@@ -29,58 +29,69 @@ class PreProcessor:
         }
 
     def extract_features(self, mp3_path, sr_target=22050):
-        # stable I/O
         y, sr = librosa.load(mp3_path, sr=sr_target, mono=True)
         y, _ = librosa.effects.trim(y, top_db=30)
         dur = librosa.get_duration(y=y, sr=sr)
-        if dur < 6:  # guard for very short clips
-            pad = int((6 - dur) * sr)
-            y = np.pad(y, (0, pad))
-            dur = librosa.get_duration(y=y, sr=sr)
+        if dur < 6:
+            y = np.pad(y, (0, int((6 - dur) * sr))); dur = librosa.get_duration(y=y, sr=sr)
 
-        # slices
+        # beat/tempo (global)
+        tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
+
+        # STFT features (global)
+        S = np.abs(librosa.stft(y, n_fft=2048, hop_length=512, center=True)) + 1e-9
+        sc = librosa.feature.spectral_centroid(S=S, sr=sr).mean()
+        sro = librosa.feature.spectral_rolloff(S=S, sr=sr, roll_percent=0.85).mean()
+        zcr = librosa.feature.zero_crossing_rate(y, frame_length=2048, hop_length=512).mean()
+
+        # MFCC (global) – mean/std only
+        mfcc = librosa.feature.mfcc(S=librosa.power_to_db(S**2), sr=sr, n_mfcc=13)
+        mfcc_mean = float(mfcc.mean())
+        mfcc_std  = float(mfcc.std())
+
+        # First/last 5s slices for harmonic + entry/exit energy
         n5 = int(5 * sr)
         first, last = y[:n5], y[-n5:]
 
-        # global tempo + beats (more stable than per-slice tempo alone)
-        tempo, beats = librosa.beat.beat_track(y=y, sr=sr)
-        f_tempo, _ = librosa.beat.beat_track(y=first, sr=sr)
-        l_tempo, _ = librosa.beat.beat_track(y=last,  sr=sr)
-
-        # timbre & harmony
-        S = np.abs(librosa.stft(y, n_fft=2048, hop_length=512, center=True)) + 1e-9
-        mfcc = librosa.feature.mfcc(S=librosa.power_to_db(S**2), sr=sr, n_mfcc=13)
-        chroma = librosa.feature.chroma_stft(S=S, sr=sr)
-
-        sc = librosa.feature.spectral_centroid(S=S, sr=sr)
-        sro = librosa.feature.spectral_rolloff(S=S, sr=sr, roll_percent=0.85)
-        zcr = librosa.feature.zero_crossing_rate(y, frame_length=2048, hop_length=512)
-
-        # slices (same features for first/last)
-        def slice_feats(sig):
+        def chroma12(sig):
             S_ = np.abs(librosa.stft(sig, n_fft=2048, hop_length=512, center=True)) + 1e-9
-            return {
-                **self._stats(librosa.feature.chroma_stft(S=S_, sr=sr).mean(axis=1), "slice_chroma"),
-                **self._stats(librosa.feature.mfcc(S=librosa.power_to_db(S_**2), sr=sr, n_mfcc=13).mean(axis=1), "slice_mfcc"),
-                "slice_centroid_mean": float(librosa.feature.spectral_centroid(S=S_, sr=sr).mean()),
-            }
+            chroma = librosa.feature.chroma_stft(S=S_, sr=sr)
+            # Ensure we get exactly 12 dimensions by taking mean across time
+            v = np.mean(chroma, axis=1)
+            # Verify it's 12-dimensional
+            # assert len(v) == 12, f"Expected 12 chroma dimensions, got {len(v)}"
+            v = v / (np.linalg.norm(v) + 1e-9)  # L2 norm for cosine later
+            return v.astype(float).tolist()
 
+        def slice_centroid(sig):
+            S_ = np.abs(librosa.stft(sig, n_fft=2048, hop_length=512, center=True)) + 1e-9
+            return float(librosa.feature.spectral_centroid(S=S_, sr=sr).mean())
+
+        # Extract chroma vectors with validation
+        first_chroma = chroma12(first)
+        last_chroma = chroma12(last)
+        
+        # Validate chroma vector dimensions
+        # assert len(first_chroma) == 12, f"First chroma vector has {len(first_chroma)} dimensions, expected 12"
+        # assert len(last_chroma) == 12, f"Last chroma vector has {len(last_chroma)} dimensions, expected 12"
+        
         feats = {
             "duration_sec": float(dur),
             "tempo_bpm": float(tempo),
-            "tempo_first5_bpm": float(f_tempo),
-            "tempo_last5_bpm": float(l_tempo),
             "n_beats": int(len(beats)),
 
-            "centroid_mean": float(sc.mean()),
-            "centroid_std":  float(sc.std()),
-            "rolloff_mean":  float(sro.mean()),
-            "zcr_mean":      float(zcr.mean()),
-            **self._stats(mfcc.mean(axis=1), "mfcc"),
-            **self._stats(chroma.mean(axis=1), "chroma"),
+            "centroid_mean": float(sc),
+            "rolloff_mean": float(sro),
+            "zcr_mean": float(zcr),
 
-            **{f"first_{k}": v for k,v in slice_feats(first).items()},
-            **{f"last_{k}":  v for k,v in slice_feats(last).items()},
+            "mfcc_mean": mfcc_mean,
+            "mfcc_std": mfcc_std,
+
+            # critical for mixing
+            "first_chroma_vec_12": first_chroma,
+            "last_chroma_vec_12": last_chroma,
+            "first_slice_centroid_mean": slice_centroid(first),
+            "last_slice_centroid_mean":  slice_centroid(last),
         }
         return feats
     
