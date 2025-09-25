@@ -51,10 +51,22 @@ class MixAlgo:
     ) -> "MixAlgo":
         """Prepare data and text embeddings (either provide dict, or a function)."""
         self.df = df.copy()
-        # Make sure chroma vectors are arrays
+        # Make sure chroma vectors are arrays (parse JSON strings from CSV)
+        import json
         for col in ("first_chroma_vec_12", "last_chroma_vec_12"):
             if col in self.df.columns:
-                self.df[col] = self.df[col].apply(lambda v: np.asarray(v, float) if isinstance(v, (list, tuple, np.ndarray)) else np.nan)
+                def parse_chroma(v):
+                    if isinstance(v, (list, tuple, np.ndarray)):
+                        return np.asarray(v, float)
+                    elif isinstance(v, str):
+                        try:
+                            parsed = json.loads(v)
+                            return np.asarray(parsed, float)
+                        except (json.JSONDecodeError, ValueError):
+                            return np.nan
+                    else:
+                        return np.nan
+                self.df[col] = self.df[col].apply(parse_chroma)
 
         # Build id index
         self.by_id = {str(r["id"]): r for _, r in self.df.iterrows()}
@@ -178,13 +190,10 @@ class MixAlgo:
                     continue
                 B = self.by_id[tid]
                 cand_rows.append(B)
-        
-        # If still no candidates, use any song except current (fallback)
+
+        # If still no candidates, fail explicitly - no good matches available
         if not cand_rows:
-            for tid, B in self.by_id.items():
-                if tid != str(current_id):
-                    cand_rows.append(B)
-                    break  # Just take one as fallback
+            raise ValueError(f"No suitable songs found for mixing after current song {current_id}. Available songs: {len(available_songs)}")
 
         # Music score
         scored = []
@@ -232,13 +241,9 @@ class MixAlgo:
     def _harm_score(self, A: pd.Series, B: pd.Series) -> float:
         a = A.get("last_chroma_vec_12", None)
         b = B.get("first_chroma_vec_12", None)
-        if isinstance(a, np.ndarray) and isinstance(b, np.ndarray):
-            return self._cos(a, b)  # already in [0..1] by _cos()
-        # fallback: use slice centroids proximity (weak proxy)
-        aC = float(A.get("last_slice_centroid_mean", np.nan))
-        bC = float(B.get("first_slice_centroid_mean", np.nan))
-        if math.isnan(aC) or math.isnan(bC): return 0.5
-        return 1 - min(1.0, abs(aC - bC) / (self.energy_scale or 1.0))
+        if not (isinstance(a, np.ndarray) and isinstance(b, np.ndarray)):
+            raise ValueError(f"Missing chroma vectors for harmonic analysis. Song A: {A.get('id', 'unknown')}, Song B: {B.get('id', 'unknown')}")
+        return self._cos(a, b)  # already in [0..1] by _cos()
 
     def _tempo_score(self, A: pd.Series, B: pd.Series) -> float:
         a, b = float(A["tempo_bpm"]), float(B["tempo_bpm"])
@@ -262,17 +267,17 @@ class MixAlgo:
     # ---------- text tie-break ----------
 
     def _tie_break_text(self, aid: str, shortlist: List[Tuple[str, float]]) -> str:
-        # If no embeddings, pick highest music score
+        # Require text embeddings for semantic tie-breaking
         if not self.embed or self.embed.get(aid) is None:
-            return shortlist[0][0]
+            raise ValueError(f"Missing text embeddings for current song {aid}. Cannot perform semantic tie-breaking.")
+
         a_vec = self.embed.get(aid)
         best_id, best_sim = shortlist[0][0], -1.0
         for tid, _ in shortlist:
             b_vec = self.embed.get(tid)
-            if b_vec is None:  # fallback to music order
-                sim = -1.0
-            else:
-                sim = self._cos_raw(a_vec, b_vec)  # [-1..1]
+            if b_vec is None:
+                raise ValueError(f"Missing text embeddings for candidate song {tid}. Cannot perform semantic tie-breaking.")
+            sim = self._cos_raw(a_vec, b_vec)  # [-1..1]
             if sim > best_sim:
                 best_id, best_sim = tid, sim
         return best_id

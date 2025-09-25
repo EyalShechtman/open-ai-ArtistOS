@@ -46,6 +46,40 @@ class QwenAPI:
         )
         return completion.choices[0].message.content, completion
 
+    def get_text_embedding(self, text: str):
+        """Get text embedding - simplified version for testing"""
+        if not text or not text.strip():
+            return None
+
+        # For now, create a simple deterministic embedding based on text characteristics
+        # This is just for testing - replace with real embeddings later
+        import hashlib
+        import numpy as np
+
+        # Create a hash of the text
+        text_hash = hashlib.md5(text.encode()).hexdigest()
+
+        # Convert hash to a fixed-size vector (1536 dims to match ada-002)
+        # This is deterministic but not semantic - just for testing tie-breaking logic
+        vector = []
+        for i in range(0, 32, 2):  # MD5 is 32 chars
+            val = int(text_hash[i:i+2], 16) / 255.0  # 0-1 range
+            vector.append(val)
+
+        # Pad to 1536 dimensions (repeat the pattern)
+        while len(vector) < 1536:
+            vector.extend(vector[:min(32, 1536 - len(vector))])
+
+        vector = vector[:1536]
+
+        # Normalize to unit vector
+        vector = np.array(vector)
+        norm = np.linalg.norm(vector)
+        if norm > 0:
+            vector = vector / norm
+
+        return vector.tolist()
+
 import yt_dlp
 import json
 import os

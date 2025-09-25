@@ -19,15 +19,6 @@ class PreProcessor:
             self.songs = json.load(f)
         return self.songs
     
-    def _stats(self, x, name):
-        x = np.asarray(x, float)
-        return {
-            f"{name}_mean": float(np.mean(x)),
-            f"{name}_std":  float(np.std(x)),
-            f"{name}_min":  float(np.min(x)),
-            f"{name}_max":  float(np.max(x)),
-        }
-
     def extract_features(self, mp3_path, sr_target=22050):
         y, sr = librosa.load(mp3_path, sr=sr_target, mono=True)
         y, _ = librosa.effects.trim(y, top_db=30)
@@ -59,7 +50,7 @@ class PreProcessor:
             # Ensure we get exactly 12 dimensions by taking mean across time
             v = np.mean(chroma, axis=1)
             # Verify it's 12-dimensional
-            # assert len(v) == 12, f"Expected 12 chroma dimensions, got {len(v)}"
+            assert len(v) == 12, f"Expected 12 chroma dimensions, got {len(v)}"
             v = v / (np.linalg.norm(v) + 1e-9)  # L2 norm for cosine later
             return v.astype(float).tolist()
 
@@ -70,10 +61,10 @@ class PreProcessor:
         # Extract chroma vectors with validation
         first_chroma = chroma12(first)
         last_chroma = chroma12(last)
-        
+
         # Validate chroma vector dimensions
-        # assert len(first_chroma) == 12, f"First chroma vector has {len(first_chroma)} dimensions, expected 12"
-        # assert len(last_chroma) == 12, f"Last chroma vector has {len(last_chroma)} dimensions, expected 12"
+        assert len(first_chroma) == 12, f"First chroma vector has {len(first_chroma)} dimensions, expected 12"
+        assert len(last_chroma) == 12, f"Last chroma vector has {len(last_chroma)} dimensions, expected 12"
         
         feats = {
             "duration_sec": float(dur),
