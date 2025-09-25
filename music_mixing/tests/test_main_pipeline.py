@@ -9,12 +9,12 @@ from unittest.mock import patch, MagicMock
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from preprocessor import PreProcessor
-from api import Data_Fetcher, QwenAPI
+from DJ.preprocessor import PreProcessor
+from DJ.api import Data_Fetcher, QwenAPI
 
 def test_environment_setup():
     """Test that all required files and dependencies exist"""
-    print("🔍 Testing environment setup...")
+    print(" Testing environment setup...")
     
     # Check if songs.json exists
     script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -37,12 +37,12 @@ def test_environment_setup():
         assert isinstance(song["name"], str), "Song name should be string"
         assert isinstance(song["artist"], str), "Song artist should be string"
     
-    print("✅ Environment setup test passed")
+    print(" Environment setup test passed")
     return songs
 
 def test_data_fetcher():
     """Test Data_Fetcher class functionality"""
-    print("🔍 Testing Data_Fetcher...")
+    print(" Testing Data_Fetcher...")
     
     data_fetcher = Data_Fetcher()
     
@@ -55,12 +55,12 @@ def test_data_fetcher():
     song = songs[0]
     assert all(key in song for key in ["id", "name", "artist"]), "Song missing required fields"
     
-    print("✅ Data_Fetcher test passed")
+    print(" Data_Fetcher test passed")
     return songs
 
 def test_preprocessor_initialization():
     """Test PreProcessor class initialization"""
-    print("🔍 Testing PreProcessor initialization...")
+    print(" Testing PreProcessor initialization...")
     
     processor = PreProcessor()
     assert hasattr(processor, 'songs'), "PreProcessor should have songs attribute"
@@ -68,11 +68,11 @@ def test_preprocessor_initialization():
     assert hasattr(processor, 'df_data'), "PreProcessor should have df_data attribute"
     assert isinstance(processor.df_data, list), "df_data should be a list"
     
-    print("✅ PreProcessor initialization test passed")
+    print(" PreProcessor initialization test passed")
 
 def test_feature_extraction():
     """Test feature extraction on a sample audio file"""
-    print("🔍 Testing feature extraction...")
+    print(" Testing feature extraction...")
     
     # Create a test audio file (sine wave)
     script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -113,11 +113,11 @@ def test_feature_extraction():
         assert isinstance(features["tempo_bpm"], (int, float)), "Tempo should be numeric"
         assert features["duration_sec"] > 0, "Duration should be positive"
         
-        print(f"   ✅ Extracted {len(features)} features")
-        print("✅ Feature extraction test passed")
+        print(f"    Extracted {len(features)} features")
+        print(" Feature extraction test passed")
         
     except Exception as e:
-        print(f"❌ Feature extraction failed: {e}")
+        print(f" Feature extraction failed: {e}")
         raise
     
     finally:
@@ -127,22 +127,22 @@ def test_feature_extraction():
 
 def test_qwen_api_initialization():
     """Test QwenAPI initialization (without making actual calls)"""
-    print("🔍 Testing QwenAPI initialization...")
+    print(" Testing QwenAPI initialization...")
     
     try:
         # Mock the environment variable
         with patch.dict(os.environ, {'qwen_key': 'test_key'}):
             qwen = QwenAPI()
             assert hasattr(qwen, 'client'), "QwenAPI should have client attribute"
-            print("✅ QwenAPI initialization test passed")
+            print(" QwenAPI initialization test passed")
     except Exception as e:
-        print(f"❌ QwenAPI initialization failed: {e}")
+        print(f" QwenAPI initialization failed: {e}")
         print("   Make sure qwen_key is set in environment variables")
         raise
 
 def test_file_paths():
     """Test that all file paths are correctly constructed"""
-    print("🔍 Testing file path construction...")
+    print(" Testing file path construction...")
     
     script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     
@@ -155,11 +155,11 @@ def test_file_paths():
     assert os.path.exists(data_dir), f"Data directory not found: {data_dir}"
     assert os.path.isdir(data_dir), "Data should be a directory"
     
-    print("✅ File paths test passed")
+    print(" File paths test passed")
 
 def test_data_processing_flow():
     """Test the complete data processing flow (without Qwen calls)"""
-    print("🔍 Testing data processing flow...")
+    print(" Testing data processing flow...")
     
     # Load songs
     script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -181,7 +181,7 @@ def test_data_processing_flow():
             
             # Skip if MP3 doesn't exist (we're not downloading in tests)
             if not os.path.exists(mp3_path):
-                print(f"   ⚠️  Skipping {song['name']} - MP3 not found")
+                print(f"     Skipping {song['name']} - MP3 not found")
                 continue
             
             print(f"   Processing: {song['name']}")
@@ -209,13 +209,13 @@ def test_data_processing_flow():
         df = pd.DataFrame(processor.df_data)
         assert len(df) > 0, "DataFrame should have data"
         assert 'qwen_analysis' in df.columns, "DataFrame should have qwen_analysis column"
-        print(f"   ✅ Created DataFrame with {len(df)} rows and {len(df.columns)} columns")
+        print(f"    Created DataFrame with {len(df)} rows and {len(df.columns)} columns")
     
-    print("✅ Data processing flow test passed")
+    print(" Data processing flow test passed")
 
 def test_csv_saving():
     """Test CSV saving functionality"""
-    print("🔍 Testing CSV saving...")
+    print(" Testing CSV saving...")
     
     # Create test data
     test_data = [
@@ -243,7 +243,7 @@ def test_csv_saving():
         assert len(df) == 1, "CSV should have 1 row"
         assert 'qwen_analysis' in df.columns, "CSV should have qwen_analysis column"
         
-        print("✅ CSV saving test passed")
+        print(" CSV saving test passed")
         
     finally:
         # Clean up
@@ -265,11 +265,11 @@ def run_all_tests():
         test_data_processing_flow()
         test_csv_saving()
         
-        print("\n🎉 All tests passed! Pipeline is ready to run.")
-        print("✅ Safe to run main.py")
+        print("\n All tests passed! Pipeline is ready to run.")
+        print(" Safe to run main.py")
         
     except Exception as e:
-        print(f"\n❌ Test failed: {e}")
+        print(f"\n Test failed: {e}")
         print("🔧 Fix the issues before running main.py")
         raise
 

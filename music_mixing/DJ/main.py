@@ -6,9 +6,9 @@ from api import Data_Fetcher
 
 def main():
     # Load songs
-    script_dir = os.path.dirname(os.path.abspath(__file__))
+    script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Go up one level to reach data/
     with open(os.path.join(script_dir, "data", "songs.json"), "r") as f:
-        songs = json.load(f)[:10]  # First 10 songs
+        songs = json.load(f)[-7:-1]  # Last 7 songs
     
     # Download songs first
     print("Downloading songs...")
@@ -41,10 +41,21 @@ def main():
         }
         processor.df_data.append(row)
     
-    # Save results
+    # Save results - append to existing CSV or create new one
     df = pd.DataFrame(processor.df_data)
-    df.to_csv("processed_songs.csv", index=False)
-    print(f"Saved {len(df)} songs to processed_songs.csv")
+
+    # Get path to processed_songs.csv in parent directory
+    csv_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "processed_songs.csv")
+
+    # Check if CSV already exists and append to it
+    if os.path.exists(csv_path):
+        existing_df = pd.read_csv(csv_path)
+        combined_df = pd.concat([existing_df, df], ignore_index=True)
+        combined_df.to_csv(csv_path, index=False)
+        print(f"Added {len(df)} new songs to processed_songs.csv (total: {len(combined_df)} songs)")
+    else:
+        df.to_csv(csv_path, index=False)
+        print(f"Created processed_songs.csv with {len(df)} songs")
 
 if __name__ == "__main__":
     main()

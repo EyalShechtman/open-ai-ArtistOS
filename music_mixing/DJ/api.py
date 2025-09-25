@@ -89,13 +89,18 @@ class Data_Fetcher:
         self.songs = []
     
     def get_songs(self):
-        with open("data/songs.json", "r") as f:
+        # Path to data directory relative to this script's parent directory
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+        songs_path = os.path.join(data_dir, "songs.json")
+        with open(songs_path, "r") as f:
             self.songs = json.load(f)
         return self.songs
 
     def youtube_search_to_mp3(self, song_name: str, artist: str, id: int, output: str = None):
         if output is None:
-            output = f'data/{id}'
+            # Path to data directory relative to this script's parent directory
+            data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+            output = os.path.join(data_dir, str(id))
         # Create a better search query with both song name and artist
         query = f"{song_name} {artist}"
         ydl_opts = {

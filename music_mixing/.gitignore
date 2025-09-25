@@ -8,3 +8,5 @@ __pycache__
 .pytest_cache
 .ruff_cache
 .mypy_cache
+.SYSTEM_ARCHITECTURE_AND_GEMINI_PLAN.md
+docs/

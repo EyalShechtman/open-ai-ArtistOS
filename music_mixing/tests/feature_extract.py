@@ -3,7 +3,7 @@ import os
 import time
 import pandas as pd
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from preprocessor import PreProcessor
+from DJ.preprocessor import PreProcessor
 
 def test_feature_extract():
     print(f'{time.time()} start')

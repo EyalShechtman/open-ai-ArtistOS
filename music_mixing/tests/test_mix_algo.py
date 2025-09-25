@@ -3,9 +3,13 @@
 Simple test script for MixAlgo with 2 random starting songs
 """
 
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import pandas as pd
 import random
-from mix_algo import MixAlgo
+from DJ.mix_algo import MixAlgo
 
 def test_mix_algo():
     # Load data
@@ -45,7 +49,7 @@ def test_mix_algo():
         # Reset for next test
         algo.reset_history()
     
-    print(f"\n✅ Test completed successfully!")
+    print(f"\nTest completed successfully!")
 
 if __name__ == "__main__":
     test_mix_algo()

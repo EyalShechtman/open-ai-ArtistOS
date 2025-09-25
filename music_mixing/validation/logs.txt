@@ -1,0 +1,1171 @@
+================================================================================
+MUSIC MIXING SYSTEM - REASON CODES AND SCORE EXPLANATIONS
+================================================================================
+Generated: 2025-09-24 20:47:38
+Total Songs: 17
+
+SYSTEM OVERVIEW
+----------------------------------------
+This system uses a 4-component scoring algorithm to determine song compatibility:
+1. Harmonic Score (40%): Chroma vector cosine similarity
+2. Tempo Score (25%): BPM difference with Gaussian weighting
+3. Timbre Score (20%): MFCC and spectral feature distance
+4. Energy Score (15%): Spectral centroid continuity
+
+Score ranges: 0.0 (poor) to 1.0 (excellent)
+
+================================================================================
+SONG ANALYSIS: s.o.s by jigitz, Tabi
+================================================================================
+Song ID: 1
+Duration: 39.7 seconds
+Tempo: 136.0 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. 2008 by Rex Orange County
+   Overall Score: 0.677
+   Harmonic: 0.943 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (136.0 → 136.0 BPM)
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.330 - Poor energy continuity (2462 → 849 Hz) - may cause jarring transition
+
+2. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.587
+   Harmonic: 0.985 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (136.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.056 - Poor timbre match - very different spectral characteristics
+   Energy: 0.752 - Good energy flow (2462 → 1864 Hz)
+
+3. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.561
+   Harmonic: 0.971 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (136.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.684 - Good energy flow (2462 → 1699 Hz)
+
+4. Healing by Gordo, Drake
+   Overall Score: 0.538
+   Harmonic: 0.996 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.009 - Poor tempo match (136.0 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.911 - Excellent energy continuity (2462 → 2248 Hz)
+
+5. Best Part by Daniel Caesar, H.E.R.
+   Overall Score: 0.531
+   Harmonic: 0.992 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.205 - Poor tempo match (136.0 → 143.6 BPM) - may need significant warping
+   Timbre: 0.015 - Poor timbre match - very different spectral characteristics
+   Energy: 0.533 - Moderate energy change (2462 → 1337 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. She’s Always a Woman by Billy Joel
+   Overall Score: 0.453
+   Harmonic: 0.975 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (136.0 → 172.3 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.416 - Moderate energy change (2462 → 1056 Hz)
+
+2. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.439
+   Harmonic: 0.945 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (136.0 → 198.8 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.401 - Moderate energy change (2462 → 1019 Hz)
+
+3. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.432
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (136.0 → 99.4 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.245 - Poor energy continuity (2462 → 644 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+================================================================================
+Song ID: 2
+Duration: 39.5 seconds
+Tempo: 161.5 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Tennessee Whiskey by Chris Stapleton
+   Overall Score: 0.556
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.082 - Poor tempo match (161.5 → 152.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.919 - Excellent energy continuity (2231 → 2035 Hz)
+
+2. Healing by Gordo, Drake
+   Overall Score: 0.547
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 123.0 BPM) - may need significant warping
+   Timbre: 0.004 - Poor timbre match - very different spectral characteristics
+   Energy: 0.993 - Excellent energy continuity (2231 → 2248 Hz)
+
+3. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.543
+   Harmonic: 0.996 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 123.0 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.958 - Excellent energy continuity (2231 → 2130 Hz)
+
+4. If You Let Me by Albi, Sinéad Harnett
+   Overall Score: 0.528
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 92.3 BPM) - may need significant warping
+   Timbre: 0.026 - Poor timbre match - very different spectral characteristics
+   Energy: 0.851 - Excellent energy continuity (2231 → 1873 Hz)
+
+5. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.519
+   Harmonic: 0.979 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 129.2 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.847 - Excellent energy continuity (2231 → 1864 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Luck Pusher by FINNEAS
+   Overall Score: 0.450
+   Harmonic: 0.963 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.430 - Moderate energy change (2231 → 859 Hz)
+
+2. 2008 by Rex Orange County
+   Overall Score: 0.444
+   Harmonic: 0.949 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 136.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.426 - Moderate energy change (2231 → 849 Hz)
+
+3. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.442
+   Harmonic: 0.977 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (161.5 → 99.4 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.341 - Poor energy continuity (2231 → 644 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Too Late by Shankz
+================================================================================
+Song ID: 3
+Duration: 40.0 seconds
+Tempo: 66.3 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Healing by Gordo, Drake
+   Overall Score: 0.500
+   Harmonic: 0.995 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.677 - Good energy flow (3027 → 2248 Hz)
+
+2. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.493
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.628 - Good energy flow (3027 → 2130 Hz)
+
+3. Tennessee Whiskey by Chris Stapleton
+   Overall Score: 0.487
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 152.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.588 - Moderate energy change (3027 → 2035 Hz)
+
+4. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.477
+   Harmonic: 0.988 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 161.5 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.540 - Moderate energy change (3027 → 1918 Hz)
+
+5. If You Let Me by Albi, Sinéad Harnett
+   Overall Score: 0.473
+   Harmonic: 0.988 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 92.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.521 - Moderate energy change (3027 → 1873 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Luck Pusher by FINNEAS
+   Overall Score: 0.403
+   Harmonic: 0.971 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.100 - Poor energy continuity (3027 → 859 Hz) - may cause jarring transition
+
+2. 2008 by Rex Orange County
+   Overall Score: 0.398
+   Harmonic: 0.960 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 136.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.096 - Poor energy continuity (3027 → 849 Hz) - may cause jarring transition
+
+3. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.397
+   Harmonic: 0.988 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (66.3 → 99.4 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.011 - Poor energy continuity (3027 → 644 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+================================================================================
+Song ID: 4
+Duration: 40.0 seconds
+Tempo: 129.2 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.731
+   Harmonic: 0.976 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (129.2 → 129.2 BPM)
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.602 - Good energy flow (2822 → 1864 Hz)
+
+2. Luck Pusher by FINNEAS
+   Overall Score: 0.653
+   Harmonic: 0.937 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (129.2 → 129.2 BPM)
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.185 - Poor energy continuity (2822 → 859 Hz) - may cause jarring transition
+
+3. Healing by Gordo, Drake
+   Overall Score: 0.596
+   Harmonic: 0.985 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (129.2 → 123.0 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.762 - Good energy flow (2822 → 2248 Hz)
+
+4. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.589
+   Harmonic: 0.986 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (129.2 → 123.0 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.712 - Good energy flow (2822 → 2130 Hz)
+
+5. s.o.s by jigitz, Tabi
+   Overall Score: 0.544
+   Harmonic: 0.974 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (129.2 → 136.0 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.566 - Moderate energy change (2822 → 1778 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. She’s Always a Woman by Billy Joel
+   Overall Score: 0.425
+   Harmonic: 0.961 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 172.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.267 - Poor energy continuity (2822 → 1056 Hz) - may cause jarring transition
+
+2. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.420
+   Harmonic: 0.955 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 198.8 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.251 - Poor energy continuity (2822 → 1019 Hz) - may cause jarring transition
+
+3. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.402
+   Harmonic: 0.968 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 99.4 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.096 - Poor energy continuity (2822 → 644 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: If You Let Me by Albi, Sinéad Harnett
+================================================================================
+Song ID: 5
+Duration: 39.9 seconds
+Tempo: 92.3 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Healing by Gordo, Drake
+   Overall Score: 0.541
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 123.0 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.944 - Excellent energy continuity (2382 → 2248 Hz)
+
+2. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.534
+   Harmonic: 0.996 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 123.0 BPM) - may need significant warping
+   Timbre: 0.006 - Poor timbre match - very different spectral characteristics
+   Energy: 0.895 - Excellent energy continuity (2382 → 2130 Hz)
+
+3. Tennessee Whiskey by Chris Stapleton
+   Overall Score: 0.527
+   Harmonic: 0.995 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 152.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.856 - Excellent energy continuity (2382 → 2035 Hz)
+
+4. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.522
+   Harmonic: 0.989 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 161.5 BPM) - may need significant warping
+   Timbre: 0.026 - Poor timbre match - very different spectral characteristics
+   Energy: 0.807 - Excellent energy continuity (2382 → 1918 Hz)
+
+5. Play That Funky Music by Wild Cherry
+   Overall Score: 0.510
+   Harmonic: 0.991 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.001 - Poor tempo match (92.3 → 107.7 BPM) - may need significant warping
+   Timbre: 0.015 - Poor timbre match - very different spectral characteristics
+   Energy: 0.738 - Good energy flow (2382 → 1753 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.447
+   Harmonic: 0.954 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 198.8 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.434 - Moderate energy change (2382 → 1019 Hz)
+
+2. Luck Pusher by FINNEAS
+   Overall Score: 0.437
+   Harmonic: 0.953 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.367 - Poor energy continuity (2382 → 859 Hz) - may cause jarring transition
+
+3. 2008 by Rex Orange County
+   Overall Score: 0.433
+   Harmonic: 0.947 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (92.3 → 136.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.363 - Poor energy continuity (2382 → 849 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Don't Forget My Love by Diplo, Miguel
+================================================================================
+Song ID: 6
+Duration: 40.0 seconds
+Tempo: 123.0 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Healing by Gordo, Drake
+   Overall Score: 0.773
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (123.0 → 123.0 BPM)
+   Timbre: 0.010 - Poor timbre match - very different spectral characteristics
+   Energy: 0.816 - Excellent energy continuity (1804 → 2248 Hz)
+
+2. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.627
+   Harmonic: 0.982 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (123.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.975 - Excellent energy continuity (1804 → 1864 Hz)
+
+3. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.621
+   Harmonic: 0.974 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (123.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.957 - Excellent energy continuity (1804 → 1699 Hz)
+
+4. Replay (with Dylan Matthew) by SLANDER, Dylan Matthew
+   Overall Score: 0.612
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.419 - Poor tempo match (123.0 → 117.5 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.731 - Good energy flow (1804 → 1157 Hz)
+
+5. Luck Pusher by FINNEAS
+   Overall Score: 0.564
+   Harmonic: 0.964 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (123.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.608 - Good energy flow (1804 → 859 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. 2008 by Rex Orange County
+   Overall Score: 0.476
+   Harmonic: 0.957 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.009 - Poor tempo match (123.0 → 136.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.603 - Good energy flow (1804 → 849 Hz)
+
+2. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.470
+   Harmonic: 0.981 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (123.0 → 99.4 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.518 - Moderate energy change (1804 → 644 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.434
+   Harmonic: 0.984 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (123.0 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.267 - Poor energy continuity (1804 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Replay (with Dylan Matthew) by SLANDER, Dylan Matthew
+================================================================================
+Song ID: 7
+Duration: 40.0 seconds
+Tempo: 117.5 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.632
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.419 - Poor tempo match (117.5 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.864 - Excellent energy continuity (1802 → 2130 Hz)
+
+2. Healing by Gordo, Drake
+   Overall Score: 0.624
+   Harmonic: 0.993 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.419 - Poor tempo match (117.5 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.815 - Excellent energy continuity (1802 → 2248 Hz)
+
+3. Play That Funky Music by Wild Cherry
+   Overall Score: 0.561
+   Harmonic: 0.990 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.070 - Poor tempo match (117.5 → 107.7 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.980 - Excellent energy continuity (1802 → 1753 Hz)
+
+4. s.o.s by jigitz, Tabi
+   Overall Score: 0.545
+   Harmonic: 0.988 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (117.5 → 136.0 BPM) - may need significant warping
+   Timbre: 0.007 - Poor timbre match - very different spectral characteristics
+   Energy: 0.990 - Excellent energy continuity (1802 → 1778 Hz)
+
+5. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.544
+   Harmonic: 0.978 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.022 - Poor tempo match (117.5 → 129.2 BPM) - may need significant warping
+   Timbre: 0.007 - Poor timbre match - very different spectral characteristics
+   Energy: 0.974 - Excellent energy continuity (1802 → 1864 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.472
+   Harmonic: 0.984 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (117.5 → 99.4 BPM) - may need significant warping
+   Timbre: 0.004 - Poor timbre match - very different spectral characteristics
+   Energy: 0.519 - Moderate energy change (1802 → 644 Hz)
+
+2. 2008 by Rex Orange County
+   Overall Score: 0.469
+   Harmonic: 0.944 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (117.5 → 136.0 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.604 - Good energy flow (1802 → 849 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.432
+   Harmonic: 0.981 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (117.5 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.266 - Poor energy continuity (1802 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Healing by Gordo, Drake
+================================================================================
+Song ID: 8
+Duration: 37.5 seconds
+Tempo: 123.0 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.748
+   Harmonic: 0.984 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (123.0 → 123.0 BPM)
+   Timbre: 0.010 - Poor timbre match - very different spectral characteristics
+   Energy: 0.682 - Good energy flow (1363 → 2130 Hz)
+
+2. Replay (with Dylan Matthew) by SLANDER, Dylan Matthew
+   Overall Score: 0.636
+   Harmonic: 0.984 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.419 - Poor tempo match (123.0 → 117.5 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.915 - Excellent energy continuity (1363 → 1157 Hz)
+
+3. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.604
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (123.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.792 - Good energy flow (1363 → 1864 Hz)
+
+4. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.604
+   Harmonic: 0.967 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (123.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.860 - Excellent energy continuity (1363 → 1699 Hz)
+
+5. Luck Pusher by FINNEAS
+   Overall Score: 0.590
+   Harmonic: 0.959 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (123.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.791 - Good energy flow (1363 → 859 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.496
+   Harmonic: 0.976 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (123.0 → 99.4 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.701 - Good energy flow (1363 → 644 Hz)
+
+2. 2008 by Rex Orange County
+   Overall Score: 0.492
+   Harmonic: 0.928 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.009 - Poor tempo match (123.0 → 136.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.786 - Good energy flow (1363 → 849 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.403
+   Harmonic: 0.976 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (123.0 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.084 - Poor energy continuity (1363 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+================================================================================
+Song ID: 9
+Duration: 39.8 seconds
+Tempo: 129.2 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.779
+   Harmonic: 0.968 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (129.2 → 129.2 BPM)
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.940 - Excellent energy continuity (1554 → 1699 Hz)
+
+2. Luck Pusher by FINNEAS
+   Overall Score: 0.744
+   Harmonic: 0.966 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (129.2 → 129.2 BPM)
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.712 - Good energy flow (1554 → 859 Hz)
+
+3. s.o.s by jigitz, Tabi
+   Overall Score: 0.611
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (129.2 → 136.0 BPM) - may need significant warping
+   Timbre: 0.056 - Poor timbre match - very different spectral characteristics
+   Energy: 0.907 - Excellent energy continuity (1554 → 1778 Hz)
+
+4. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.598
+   Harmonic: 0.992 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (129.2 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.761 - Good energy flow (1554 → 2130 Hz)
+
+5. Healing by Gordo, Drake
+   Overall Score: 0.592
+   Harmonic: 0.993 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (129.2 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.712 - Good energy flow (1554 → 2248 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.499
+   Harmonic: 0.954 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 198.8 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.778 - Good energy flow (1554 → 1019 Hz)
+
+2. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.485
+   Harmonic: 0.978 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 99.4 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.622 - Good energy flow (1554 → 644 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.421
+   Harmonic: 0.991 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.163 - Poor energy continuity (1554 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+================================================================================
+Song ID: 10
+Duration: 36.1 seconds
+Tempo: 198.8 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.543
+   Harmonic: 0.989 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.983 - Excellent energy continuity (2090 → 2130 Hz)
+
+2. Tennessee Whiskey by Chris Stapleton
+   Overall Score: 0.540
+   Harmonic: 0.982 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 152.0 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.977 - Excellent energy continuity (2090 → 2035 Hz)
+
+3. Healing by Gordo, Drake
+   Overall Score: 0.535
+   Harmonic: 0.986 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.934 - Excellent energy continuity (2090 → 2248 Hz)
+
+4. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.527
+   Harmonic: 0.969 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 161.5 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.929 - Excellent energy continuity (2090 → 1918 Hz)
+
+5. If You Let Me by Albi, Sinéad Harnett
+   Overall Score: 0.525
+   Harmonic: 0.971 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 92.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.910 - Excellent energy continuity (2090 → 1873 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. 2008 by Rex Orange County
+   Overall Score: 0.453
+   Harmonic: 0.948 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 136.0 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.485 - Moderate energy change (2090 → 849 Hz)
+
+2. Luck Pusher by FINNEAS
+   Overall Score: 0.448
+   Harmonic: 0.934 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 129.2 BPM) - may need significant warping
+   Timbre: 0.006 - Poor timbre match - very different spectral characteristics
+   Energy: 0.489 - Moderate energy change (2090 → 859 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.444
+   Harmonic: 0.966 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (198.8 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.386 - Poor energy continuity (2090 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Best Part by Daniel Caesar, H.E.R.
+================================================================================
+Song ID: 26
+Duration: 39.2 seconds
+Tempo: 143.6 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. s.o.s by jigitz, Tabi
+   Overall Score: 0.584
+   Harmonic: 0.953 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.205 - Poor tempo match (143.6 → 136.0 BPM) - may need significant warping
+   Timbre: 0.015 - Poor timbre match - very different spectral characteristics
+   Energy: 0.993 - Excellent energy continuity (1794 → 1778 Hz)
+
+2. Tennessee Whiskey by Chris Stapleton
+   Overall Score: 0.555
+   Harmonic: 0.961 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.138 - Poor tempo match (143.6 → 152.0 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.900 - Excellent energy continuity (1794 → 2035 Hz)
+
+3. If You Let Me by Albi, Sinéad Harnett
+   Overall Score: 0.531
+   Harmonic: 0.964 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (143.6 → 92.3 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.967 - Excellent energy continuity (1794 → 1873 Hz)
+
+4. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.527
+   Harmonic: 0.945 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.003 - Poor tempo match (143.6 → 129.2 BPM) - may need significant warping
+   Timbre: 0.012 - Poor timbre match - very different spectral characteristics
+   Energy: 0.971 - Excellent energy continuity (1794 → 1864 Hz)
+
+5. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.525
+   Harmonic: 0.956 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (143.6 → 161.5 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.948 - Excellent energy continuity (1794 → 1918 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Luck Pusher by FINNEAS
+   Overall Score: 0.462
+   Harmonic: 0.924 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.003 - Poor tempo match (143.6 → 129.2 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.612 - Good energy flow (1794 → 859 Hz)
+
+2. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.459
+   Harmonic: 0.951 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (143.6 → 99.4 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.523 - Moderate energy change (1794 → 644 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.427
+   Harmonic: 0.969 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (143.6 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.263 - Poor energy continuity (1794 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: 2008 by Rex Orange County
+================================================================================
+Song ID: 27
+Duration: 39.3 seconds
+Tempo: 136.0 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. s.o.s by jigitz, Tabi
+   Overall Score: 0.787
+   Harmonic: 0.982 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (136.0 → 136.0 BPM)
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.954 - Excellent energy continuity (1668 → 1778 Hz)
+
+2. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.601
+   Harmonic: 0.959 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (136.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.987 - Excellent energy continuity (1668 → 1699 Hz)
+
+3. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.599
+   Harmonic: 0.978 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (136.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.919 - Excellent energy continuity (1668 → 1864 Hz)
+
+4. Best Part by Daniel Caesar, H.E.R.
+   Overall Score: 0.568
+   Harmonic: 0.968 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.205 - Poor tempo match (136.0 → 143.6 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.863 - Excellent energy continuity (1668 → 1337 Hz)
+
+5. Luck Pusher by FINNEAS
+   Overall Score: 0.557
+   Harmonic: 0.961 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (136.0 → 129.2 BPM) - may need significant warping
+   Timbre: 0.017 - Poor timbre match - very different spectral characteristics
+   Energy: 0.664 - Good energy flow (1668 → 859 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.494
+   Harmonic: 0.959 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (136.0 → 198.8 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.730 - Good energy flow (1668 → 1019 Hz)
+
+2. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.486
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (136.0 → 99.4 BPM) - may need significant warping
+   Timbre: 0.022 - Poor timbre match - very different spectral characteristics
+   Energy: 0.575 - Moderate energy change (1668 → 644 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.429
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (136.0 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.210 - Poor energy continuity (1668 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Gata Only by FloyyMenor, Cris MJ
+================================================================================
+Song ID: 28
+Duration: 39.8 seconds
+Tempo: 99.4 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. If You Let Me by Albi, Sinéad Harnett
+   Overall Score: 0.580
+   Harmonic: 0.984 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.247 - Poor tempo match (99.4 → 92.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.832 - Excellent energy continuity (1470 → 1873 Hz)
+
+2. Play That Funky Music by Wild Cherry
+   Overall Score: 0.565
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.149 - Poor tempo match (99.4 → 107.7 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.883 - Excellent energy continuity (1470 → 1753 Hz)
+
+3. Best Part by Daniel Caesar, H.E.R.
+   Overall Score: 0.533
+   Harmonic: 0.977 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (99.4 → 143.6 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.945 - Excellent energy continuity (1470 → 1337 Hz)
+
+4. Replay (with Dylan Matthew) by SLANDER, Dylan Matthew
+   Overall Score: 0.524
+   Harmonic: 0.983 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (99.4 → 117.5 BPM) - may need significant warping
+   Timbre: 0.004 - Poor timbre match - very different spectral characteristics
+   Energy: 0.870 - Excellent energy continuity (1470 → 1157 Hz)
+
+5. s.o.s by jigitz, Tabi
+   Overall Score: 0.523
+   Harmonic: 0.979 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (99.4 → 136.0 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.872 - Excellent energy continuity (1470 → 1778 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Luck Pusher by FINNEAS
+   Overall Score: 0.498
+   Harmonic: 0.942 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (99.4 → 129.2 BPM) - may need significant warping
+   Timbre: 0.046 - Poor timbre match - very different spectral characteristics
+   Energy: 0.747 - Good energy flow (1470 → 859 Hz)
+
+2. 2008 by Rex Orange County
+   Overall Score: 0.494
+   Harmonic: 0.945 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (99.4 → 136.0 BPM) - may need significant warping
+   Timbre: 0.022 - Poor timbre match - very different spectral characteristics
+   Energy: 0.742 - Good energy flow (1470 → 849 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.407
+   Harmonic: 0.968 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (99.4 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.128 - Poor energy continuity (1470 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Tennessee Whiskey by Chris Stapleton
+================================================================================
+Song ID: 29
+Duration: 39.7 seconds
+Tempo: 152.0 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Best Part by Daniel Caesar, H.E.R.
+   Overall Score: 0.577
+   Harmonic: 0.992 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.138 - Poor tempo match (152.0 → 143.6 BPM) - may need significant warping
+   Timbre: 0.005 - Poor timbre match - very different spectral characteristics
+   Energy: 0.964 - Excellent energy continuity (1250 → 1337 Hz)
+
+2. Replay (with Dylan Matthew) by SLANDER, Dylan Matthew
+   Overall Score: 0.546
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (152.0 → 117.5 BPM) - may need significant warping
+   Timbre: 0.016 - Poor timbre match - very different spectral characteristics
+   Energy: 0.962 - Excellent energy continuity (1250 → 1157 Hz)
+
+3. She’s Always a Woman by Billy Joel
+   Overall Score: 0.529
+   Harmonic: 0.975 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (152.0 → 172.3 BPM) - may need significant warping
+   Timbre: 0.008 - Poor timbre match - very different spectral characteristics
+   Energy: 0.920 - Excellent energy continuity (1250 → 1056 Hz)
+
+4. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.524
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.082 - Poor tempo match (152.0 → 161.5 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.722 - Good energy flow (1250 → 1918 Hz)
+
+5. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.516
+   Harmonic: 0.950 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (152.0 → 198.8 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.904 - Excellent energy continuity (1250 → 1019 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.494
+   Harmonic: 0.996 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (152.0 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.635 - Good energy flow (1250 → 2130 Hz)
+
+2. Healing by Gordo, Drake
+   Overall Score: 0.487
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (152.0 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.585 - Moderate energy change (1250 → 2248 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.401
+   Harmonic: 0.988 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (152.0 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.037 - Poor energy continuity (1250 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: She’s Always a Woman by Billy Joel
+================================================================================
+Song ID: 30
+Duration: 39.3 seconds
+Tempo: 172.3 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.528
+   Harmonic: 0.982 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.040 - Poor tempo match (172.3 → 161.5 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.836 - Excellent energy continuity (1523 → 1918 Hz)
+
+2. Play That Funky Music by Wild Cherry
+   Overall Score: 0.528
+   Harmonic: 0.980 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 107.7 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.905 - Excellent energy continuity (1523 → 1753 Hz)
+
+3. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.524
+   Harmonic: 0.962 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.927 - Excellent energy continuity (1523 → 1699 Hz)
+
+4. Best Part by Daniel Caesar, H.E.R.
+   Overall Score: 0.524
+   Harmonic: 0.963 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 143.6 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.923 - Excellent energy continuity (1523 → 1337 Hz)
+
+5. s.o.s by jigitz, Tabi
+   Overall Score: 0.523
+   Harmonic: 0.970 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 136.0 BPM) - may need significant warping
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.894 - Excellent energy continuity (1523 → 1778 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. Luck Pusher by FINNEAS
+   Overall Score: 0.488
+   Harmonic: 0.944 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 129.2 BPM) - may need significant warping
+   Timbre: 0.008 - Poor timbre match - very different spectral characteristics
+   Energy: 0.725 - Good energy flow (1523 → 859 Hz)
+
+2. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.487
+   Harmonic: 0.975 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 99.4 BPM) - may need significant warping
+   Timbre: 0.007 - Poor timbre match - very different spectral characteristics
+   Energy: 0.635 - Good energy flow (1523 → 644 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.413
+   Harmonic: 0.976 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (172.3 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.150 - Poor energy continuity (1523 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Luck Pusher by FINNEAS
+================================================================================
+Song ID: 31
+Duration: 40.0 seconds
+Tempo: 129.2 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Better Off (Alone, Pt. III) by Alan Walker, Dash Berlin, Vikkstar
+   Overall Score: 0.779
+   Harmonic: 0.964 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (129.2 → 129.2 BPM)
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.953 - Excellent energy continuity (1586 → 1699 Hz)
+
+2. Best Day of My Life (BUNT. Version) by BUNT., Tom Odell
+   Overall Score: 0.766
+   Harmonic: 0.958 - Excellent harmonic match - very similar chord progressions
+   Tempo: 1.000 - Excellent tempo match (129.2 → 129.2 BPM)
+   Timbre: 0.003 - Poor timbre match - very different spectral characteristics
+   Energy: 0.885 - Excellent energy continuity (1586 → 1864 Hz)
+
+3. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.597
+   Harmonic: 0.984 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (129.2 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.774 - Good energy flow (1586 → 2130 Hz)
+
+4. s.o.s by jigitz, Tabi
+   Overall Score: 0.597
+   Harmonic: 0.972 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.277 - Poor tempo match (129.2 → 136.0 BPM) - may need significant warping
+   Timbre: 0.002 - Poor timbre match - very different spectral characteristics
+   Energy: 0.920 - Excellent energy continuity (1586 → 1778 Hz)
+
+5. Healing by Gordo, Drake
+   Overall Score: 0.589
+   Harmonic: 0.982 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.349 - Poor tempo match (129.2 → 123.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.725 - Good energy flow (1586 → 2248 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. She’s Always a Woman by Billy Joel
+   Overall Score: 0.499
+   Harmonic: 0.952 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 172.3 BPM) - may need significant warping
+   Timbre: 0.008 - Poor timbre match - very different spectral characteristics
+   Energy: 0.780 - Good energy flow (1586 → 1056 Hz)
+
+2. Gata Only by FloyyMenor, Cris MJ
+   Overall Score: 0.492
+   Harmonic: 0.978 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 99.4 BPM) - may need significant warping
+   Timbre: 0.046 - Poor timbre match - very different spectral characteristics
+   Energy: 0.609 - Good energy flow (1586 → 644 Hz)
+
+3. Too Late by Shankz
+   Overall Score: 0.411
+   Harmonic: 0.960 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (129.2 → 66.3 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.176 - Poor energy continuity (1586 → 3569 Hz) - may cause jarring transition
+
+
+================================================================================
+SONG ANALYSIS: Play That Funky Music by Wild Cherry
+================================================================================
+Song ID: 32
+Duration: 38.9 seconds
+Tempo: 107.7 BPM
+
+TOP 5 MOST COMPATIBLE SONGS:
+----------------------------------------
+1. Healing by Gordo, Drake
+   Overall Score: 0.547
+   Harmonic: 0.998 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.001 - Poor tempo match (107.7 → 123.0 BPM) - may need significant warping
+   Timbre: 0.006 - Poor timbre match - very different spectral characteristics
+   Energy: 0.977 - Excellent energy continuity (2304 → 2248 Hz)
+
+2. Don't Forget My Love by Diplo, Miguel
+   Overall Score: 0.539
+   Harmonic: 0.997 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.001 - Poor tempo match (107.7 → 123.0 BPM) - may need significant warping
+   Timbre: 0.006 - Poor timbre match - very different spectral characteristics
+   Energy: 0.928 - Excellent energy continuity (2304 → 2130 Hz)
+
+3. Tennessee Whiskey by Chris Stapleton
+   Overall Score: 0.531
+   Harmonic: 0.995 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (107.7 → 152.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.889 - Excellent energy continuity (2304 → 2035 Hz)
+
+4. If You Let Me by Albi, Sinéad Harnett
+   Overall Score: 0.524
+   Harmonic: 0.994 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.001 - Poor tempo match (107.7 → 92.3 BPM) - may need significant warping
+   Timbre: 0.015 - Poor timbre match - very different spectral characteristics
+   Energy: 0.821 - Excellent energy continuity (2304 → 1873 Hz)
+
+5. tell you straight (Ely Oaks’ version) by jigitz, Ely Oaks
+   Overall Score: 0.524
+   Harmonic: 0.987 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (107.7 → 161.5 BPM) - may need significant warping
+   Timbre: 0.014 - Poor timbre match - very different spectral characteristics
+   Energy: 0.840 - Excellent energy continuity (2304 → 1918 Hz)
+
+LEAST COMPATIBLE SONGS:
+----------------------------------------
+1. First Time by Seven Lions, SLANDER, Dabin, Dylan Matthew
+   Overall Score: 0.452
+   Harmonic: 0.955 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (107.7 → 198.8 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.466 - Moderate energy change (2304 → 1019 Hz)
+
+2. Luck Pusher by FINNEAS
+   Overall Score: 0.442
+   Harmonic: 0.954 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (107.7 → 129.2 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.400 - Moderate energy change (2304 → 859 Hz)
+
+3. 2008 by Rex Orange County
+   Overall Score: 0.438
+   Harmonic: 0.945 - Excellent harmonic match - very similar chord progressions
+   Tempo: 0.000 - Poor tempo match (107.7 → 136.0 BPM) - may need significant warping
+   Timbre: 0.001 - Poor timbre match - very different spectral characteristics
+   Energy: 0.396 - Poor energy continuity (2304 → 849 Hz) - may cause jarring transition
+

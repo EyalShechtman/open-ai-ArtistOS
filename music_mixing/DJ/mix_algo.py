@@ -267,16 +267,17 @@ class MixAlgo:
     # ---------- text tie-break ----------
 
     def _tie_break_text(self, aid: str, shortlist: List[Tuple[str, float]]) -> str:
-        # Require text embeddings for semantic tie-breaking
+        # If no text embeddings available, return the top music-scored song
         if not self.embed or self.embed.get(aid) is None:
-            raise ValueError(f"Missing text embeddings for current song {aid}. Cannot perform semantic tie-breaking.")
+            return shortlist[0][0]  # Return highest music score
 
         a_vec = self.embed.get(aid)
         best_id, best_sim = shortlist[0][0], -1.0
         for tid, _ in shortlist:
             b_vec = self.embed.get(tid)
             if b_vec is None:
-                raise ValueError(f"Missing text embeddings for candidate song {tid}. Cannot perform semantic tie-breaking.")
+                # If any candidate lacks embedding, fall back to music score
+                return shortlist[0][0]
             sim = self._cos_raw(a_vec, b_vec)  # [-1..1]
             if sim > best_sim:
                 best_id, best_sim = tid, sim

@@ -8,6 +8,7 @@ import random
 import subprocess
 import threading
 import time
+import os
 from datetime import datetime
 from mix_algo import MixAlgo
 from api import QwenAPI
@@ -32,8 +33,10 @@ class DJPlayer:
     def load_music(self):
         """Load music data and initialize algorithm"""
         log("load_music() called", "METHOD")
-        print("🎵 Loading music library...")
-        df = pd.read_csv("processed_songs.csv")
+        print("Loading music library...")
+        # Path to processed_songs.csv in parent directory
+        csv_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "processed_songs.csv")
+        df = pd.read_csv(csv_path)
         log(f"Loaded DataFrame with {len(df)} rows and columns: {list(df.columns)}", "DATA")
 
         # Compute text embeddings for semantic tie-breaking
@@ -57,7 +60,7 @@ class DJPlayer:
         # Fit the algorithm with embeddings
         self.algo.fit(df, embeddings=embeddings)
         log(f"MixAlgo fit completed, by_id keys: {len(self.algo.by_id)}", "DATA")
-        print(f"✅ Loaded {len(df)} songs with {len(embeddings)} embeddings")
+        print(f"Loaded {len(df)} songs with {len(embeddings)} embeddings")
         
     def start_mix(self, playlist_length=10):
         """Start a new mix session"""
@@ -68,7 +71,7 @@ class DJPlayer:
         start_song_id = random.choice(available_songs)
         log(f"Selected starting song: {start_song_id}", "DECISION")
 
-        print(f"\n🎧 Starting mix session...")
+        print(f"\nStarting mix session...")
         log("Calling algo.generate_playlist()", "CALL")
         self.playlist = self.algo.generate_playlist(start_song_id, playlist_length)
         log(f"generate_playlist returned {len(self.playlist)} songs", "RESULT")
@@ -85,9 +88,9 @@ class DJPlayer:
         
     def show_playlist(self):
         """Display current playlist"""
-        print(f"\n📋 Current Playlist:")
+        print(f"\nCurrent Playlist:")
         for i, song in enumerate(self.playlist):
-            marker = "▶️" if i == self.current_song else "  "
+            marker = ">" if i == self.current_song else "  "
             print(f"{marker} {i+1}. {song['name']} by {song['artist']} ({song['tempo_bpm']:.1f} BPM)")
     
     def play_next(self):
@@ -96,7 +99,7 @@ class DJPlayer:
 
         if not self.is_playing or self.current_song >= len(self.playlist):
             log("Playlist complete or not playing - stopping", "DECISION")
-            print("🎉 Playlist complete!")
+            print("Playlist complete!")
             self.is_playing = False
             return
 
@@ -105,7 +108,7 @@ class DJPlayer:
             
         song = self.playlist[self.current_song]
         log(f"Playing song {self.current_song + 1}: {song['name']}")
-        print(f"\n🎵 Now Playing: {song['name']} by {song['artist']}")
+        print(f"\nNow Playing: {song['name']} by {song['artist']}")
         
         # Stop current audio and monitor thread
         if self.current_process:
@@ -118,9 +121,10 @@ class DJPlayer:
             # Note: daemon threads will be terminated when main thread exits
 
         # Play new song
-        audio_path = f"data/{song['song_id']}.mp3"
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+        audio_path = os.path.join(data_dir, f"{song['song_id']}.mp3")
         log(f"Starting audio process for: {audio_path}")
-        print(f"   🎵 Playing: {audio_path}")
+        print(f"   Playing: {audio_path}")
 
         # Require sox for proper volume control and crossfading
         # Current song plays at full volume - crossfading is handled separately
@@ -169,9 +173,9 @@ class DJPlayer:
             # Check if this monitor is still relevant (song hasn't been manually advanced)
             if self.is_playing and self.current_song == monitor_song_index + 1 and not getattr(self, 'manual_mode', False):
                 log(f"Starting crossfade transition at {crossfade_start_time:.1f}s", "ACTION")
-                print(f"\n🎛️ Starting crossfade transition ({crossfade_duration:.1f}s)...")
-                print(f"   🔉 Current: {current_song_data['name']}")
-                print(f"   🔊 Next: {next_song_data['name']}")
+                print(f"\nStarting crossfade transition ({crossfade_duration:.1f}s)...")
+                print(f"   Current: {current_song_data['name']}")
+                print(f"   Next: {next_song_data['name']}")
                 log("Calling start_crossfade()", "CALL")
                 self.start_crossfade(monitor_song_index + 1)  # Pass the correct next song index
             else:
@@ -191,7 +195,7 @@ class DJPlayer:
             # Handle transition to next song
             if hasattr(self, 'next_process') and self.next_process:
                 log("Completing crossfade transition")
-                print("🎵 Crossfade complete - now playing next song")
+                print("Crossfade complete - now playing next song")
                 self.current_process = self.next_process
                 self.next_process = None
                 self.current_song += 1
@@ -203,7 +207,7 @@ class DJPlayer:
                 # No crossfade, just advance normally
                 if self.is_playing and self.current_song < len(self.playlist):
                     log("No crossfade - advancing to next song normally")
-                    print("\n🎵 Song finished! Moving to next...")
+                    print("\nSong finished! Moving to next...")
                     self.play_next()
         else:
             log("In manual mode - not auto-advancing", "DECISION")
@@ -231,10 +235,11 @@ class DJPlayer:
         log(f"Starting volume-controlled crossfade to: {next_song['name']}", "ACTION")
         log(f"Crossfade duration: {crossfade_duration:.3f}s", "DATA")
 
-        audio_path = f"data/{next_song['song_id']}.mp3"
+        data_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
+        audio_path = os.path.join(data_dir, f"{next_song['song_id']}.mp3")
         log(f"Starting crossfade with volume control for: {audio_path}", "AUDIO")
 
-        print(f"   🔊 Fading in: {next_song['name']} (0% → 100% in {crossfade_duration:.1f}s)")
+        print(f"   Fading in: {next_song['name']} (0% -> 100% in {crossfade_duration:.1f}s)")
 
         # Use sox to fade in from silence to full volume over the crossfade duration
         sox_cmd = [
@@ -253,7 +258,7 @@ class DJPlayer:
         self.is_playing = False
         if self.current_process:
             self.current_process.terminate()
-        print("⏹️ Mix session stopped")
+        print("Mix session stopped")
 
 def main():
     """Main DJ interface"""
@@ -262,13 +267,13 @@ def main():
     dj = DJPlayer()
     log("DJPlayer instance created", "INIT")
 
-    print("🎧 Welcome to DJ MixAlgo!")
+    print("Welcome to DJ MixAlgo!")
     print("=" * 40)
     log("Calling dj.load_music()", "CALL")
     dj.load_music()
     
     while True:
-        print(f"\n🎛️ DJ Controls:")
+        print(f"\nDJ Controls:")
         print("1. Start new mix")
         print("2. Play next song")
         print("3. Show playlist")
@@ -284,13 +289,13 @@ def main():
             
         elif choice == "2":
             if not dj.playlist:
-                print("❌ Start a mix first.")
+                print("Start a mix first.")
             else:
                 dj.play_next()
                 
         elif choice == "3":
             if not dj.playlist:
-                print("❌ No playlist.")
+                print("No playlist.")
             else:
                 dj.show_playlist()
                 
@@ -298,11 +303,11 @@ def main():
             dj.stop_mix()
                 
         elif choice == "0":
-            print("👋 Goodbye!")
+            print("Goodbye!")
             break
             
         else:
-            print("❌ Invalid option")
+            print("Invalid option")
 
 if __name__ == "__main__":
     main()

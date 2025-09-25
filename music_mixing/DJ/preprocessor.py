@@ -3,6 +3,7 @@ import librosa
 import pandas as pd
 from api import QwenAPI
 import numpy as np
+import os
 
 class PreProcessor:
     def __init__(self):
@@ -12,8 +13,8 @@ class PreProcessor:
     
     def get_songs(self):
         import os
-        # Get the directory where this script is located
-        script_dir = os.path.dirname(os.path.abspath(__file__))
+        # Get the parent directory where the data folder is located
+        script_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         songs_path = os.path.join(script_dir, "data", "songs.json")
         with open(songs_path, "r") as f:
             self.songs = json.load(f)
@@ -112,7 +113,10 @@ class PreProcessor:
             self.df_data.append(row)
             print(f"Completed: {song['name']}")
     
-    def save_to_csv(self, filename="processed_songs.csv"):
+    def save_to_csv(self, filename=None):
+        if filename is None:
+            # Default to processed_songs.csv in parent directory
+            filename = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "processed_songs.csv")
         df = pd.DataFrame(self.df_data)
         df.to_csv(filename, index=False)
         print(f"Saved {len(df)} songs to {filename}")
