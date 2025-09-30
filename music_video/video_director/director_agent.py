@@ -21,14 +21,14 @@ class DirectorAgent:
     2. Generate snippet-level directives that maintain continuity
     """
     
-    def __init__(self, model: str = "gpt-4o"):
+    def __init__(self, model: str = "gemini-2.5-pro"):
         """
         Initialize the director agent.
         
         Args:
             model: OpenAI model to use for planning (default: gpt-4o)
         """
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.client = OpenAI(api_key=os.getenv("GOOGLE_API_KEY"))
         self.model = model
         self.global_plan = None
     
@@ -59,8 +59,34 @@ class DirectorAgent:
             director = DirectorAgent()
             plan = director.create_global_plan(transcriptions)
         """
-        # TODO: Implement this function
-        pass
+        transcriptions_str = ""
+        for transcription in transcriptions:
+            transcriptions_str += f"{transcription['path']}: {transcription['transcription']}\n"
+        prompt = f"""
+        You are a creative music video director. You are given a list of transcriptions of 10-second segments of a song. You need to create a global plan for the entire music video.
+        The transcriptions are:
+        {transcriptions_str}
+        You need to create a global plan for the entire music video.
+        The global plan should include:
+        - Overall concept and theme
+        - Narrative arc (if any)
+        - Color palette and visual style
+        - Recurring motifs and imagery
+        - Transition rules and pacing
+        - As much inforamtion as possible about the video plan
+        - If there is a character in the video, we will provide the image of the artist. If you decide that no character is needed, you should say so.
+
+        return JSON with this structure:
+        {
+            "Director Plan": "ALL THE INFORMATION ABOUT THE VIDEO PLAN",
+            "character": "Yes or No",
+        }
+        """
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{"role": "user", "content": prompt}]
+        )
+        return response.choices[0].message.content
     
     def generate_snippet_directive(
         self, 

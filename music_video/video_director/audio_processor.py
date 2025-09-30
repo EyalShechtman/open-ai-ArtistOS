@@ -41,11 +41,42 @@ class AudioProcessor:
             segments = processor.split_audio("song.mp3", "output/segments")
             # Returns: ["output/segments/segment_0.mp3", "output/segments/segment_1.mp3", ...]
         """
-        # TODO: Implement this function
-        # Steps:
         # 1. Load the audio file using pydub
+        audio = AudioSegment.from_mp3(input_path)
+        
         # 2. Calculate number of segments needed
-        # 3. Split audio into segments
-        # 4. Save each segment with sequential naming
-        # 5. Return list of output paths
-        pass
+        total_duration = len(audio)  # Duration in milliseconds
+        num_segments = (total_duration + self.segment_duration - 1) // self.segment_duration  # Ceiling division
+        
+        # 3. Create output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        
+        # 4. Extract song name from input path
+        song_name = os.path.splitext(os.path.basename(input_path))[0]
+        
+        # 5. Split audio into segments and save with sequential naming
+        output_paths = []
+        for i in range(num_segments):
+            start_time = i * self.segment_duration
+            end_time = min((i + 1) * self.segment_duration, total_duration)
+            
+            # Extract segment
+            segment = audio[start_time:end_time]
+            
+            # Create output filename: songName_N.mp3
+            output_filename = f"{song_name}_{i}.mp3"
+            output_path = os.path.join(output_dir, output_filename)
+            
+            # Export segment
+            segment.export(output_path, format="mp3")
+            output_paths.append(output_path)
+            
+            print(f"Created segment {i + 1}/{num_segments}: {output_filename}")
+        
+        # 6. Return list of output paths
+        return output_paths
+
+
+if __name__ == "__main__":
+    processor = AudioProcessor(segment_duration=10)
+    processor.split_audio("../music/songs/HBP.mp3", "../music/segments")
