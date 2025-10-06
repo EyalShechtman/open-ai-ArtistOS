@@ -16,7 +16,7 @@ class AudioProcessor:
     Default segment length is 10 seconds to match video generation constraints.
     """
     
-    def __init__(self, segment_duration: int = 10):
+    def __init__(self, segment_duration: int = 8):
         """
         Initialize the audio processor.
         
@@ -78,5 +78,5 @@ class AudioProcessor:
 
 
 if __name__ == "__main__":
-    processor = AudioProcessor(segment_duration=10)
+    processor = AudioProcessor(segment_duration=8)
     processor.split_audio("../music/songs/HBP.mp3", "../music/segments")

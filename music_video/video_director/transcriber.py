@@ -31,12 +31,13 @@ class MusicTranscriber:
         """Initialize the transcriber with QwenAPI client."""
         self.qwen = QwenAPI()
     
-    def transcribe_segment(self, audio_path: str) -> dict:
+    def transcribe_segment(self, audio_path: str, save_to_file: bool = True) -> dict:
         """
         Transcribe a single audio segment to text.
         
         Args:
             audio_path: Path to the audio segment file
+            save_to_file: If True, save transcription to ../music/transcriptions/ (default: True)
             
         Returns:
             Dictionary containing:
@@ -50,10 +51,27 @@ class MusicTranscriber:
             #     "path": "segment_0.mp3",
             #     "transcription": "Upbeat electronic track with driving synths..."
             # }
+            # Also saves to: ../music/transcriptions/songname_0.txt
         """
         print(f"Transcribing: {audio_path}")
         url = self.qwen.upload_temp_mp3(audio_path)
         qwen_result, _ = self.qwen.call_qwen(url)
+        
+        # Save transcription to file if requested
+        if save_to_file:
+            # Extract filename without extension (e.g., "HBP_0" from "HBP_0.mp3")
+            filename_no_ext = os.path.splitext(os.path.basename(audio_path))[0]
+            
+            # Create transcriptions directory if it doesn't exist
+            transcriptions_dir = os.path.join(os.path.dirname(__file__), '..', 'music', 'transcriptions')
+            os.makedirs(transcriptions_dir, exist_ok=True)
+            
+            # Save transcription to text file
+            output_file = os.path.join(transcriptions_dir, f"{filename_no_ext}.txt")
+            with open(output_file, 'w') as f:
+                f.write(qwen_result)
+            print(f"Saved transcription to: {output_file}")
+        
         return {"path": audio_path, "transcription": qwen_result}
     
     def transcribe_all_segments(self, segment_paths: list[str]) -> dict:
@@ -97,7 +115,5 @@ if __name__ == "__main__":
         print("\nTranscription Result:")
         print(f"Path: {result['path']}")
         print(f"Transcription: {result['transcription']}")
-        to_json = {test_file: result}
-        json.dump(to_json, open(f"../music/transcriptions/{song_name}.json", "w"))
     else:
         print(f"Error: Test file not found at {test_path}")
